@@ -1,0 +1,110 @@
+body {
+    background-color: #FFE8D6;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 8em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* align-content: center; does nothing if you don't wrap anything */
+}
+
+#container div {
+    width: 8em;
+    height: 8em;
+    /* max-width: 400px; */
+    text-align: center;
+}
+
+#container div:nth-of-type(1) {
+    background: repeating-linear-gradient(135deg,
+            #A5A58D,
+            #A5A58D 50%,
+            #FFE8D6 50%,
+            #FFE8D6 100%);
+}
+
+#container div:nth-of-type(2) {
+    align-self: flex-end;
+    background: repeating-linear-gradient(45deg,
+            #FFE8D6,
+            #FFE8D6 50%,
+            #A5A58D 50%,
+            #A5A58D 100%);
+}
+
+#container:nth-of-type(2) div:nth-of-type(1) {
+    background: repeating-linear-gradient(45deg,
+            #A5A58D,
+            #A5A58D 50%,
+            #FFE8D6 50%,
+            #FFE8D6 100%);
+}
+
+#container:nth-of-type(2) div:nth-of-type(2) {
+    background: repeating-linear-gradient(135deg,
+            #FFE8D6,
+            #FFE8D6 50%,
+            #A5A58D 50%,
+            #A5A58D 100%);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 2;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100px;
+    color: #3F4238;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #997B66;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.panel {
+    padding: 70px 200px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    /*does nothing if you don't wrap anything*/
+}
+
+.mainMenu a {
+    text-decoration: none;
+    color: #FFE8D6;
+    font-family: 'Nanum Myeongjo', cursive;
+    font-size: 1.5rem;
+}
+
+.button {
+    border: 2px solid #3F4238;
+    background-color: #797D62;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    color: #6B705C;
+    background-color: #DDBEA9;
+    text-decoration: none;
+}
